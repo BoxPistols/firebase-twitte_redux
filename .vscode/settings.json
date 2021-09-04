@@ -10,5 +10,6 @@
     "workbench.tree.indent": 12,
     "propTypes.tabWidth": 4,
     "editor.formatOnSave": true,
-    "prettier.useTabs": false
+    "prettier.useTabs": false,
+    "editor.tabSize": 2
 }
