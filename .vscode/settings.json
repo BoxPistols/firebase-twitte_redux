@@ -1,0 +1,15 @@
+{
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": false,
+    "prettier.javascriptEnable": [
+        "javascript",
+        "javascript",
+        "javascriptreact"
+    ],
+    "editor.autoIndent": "advanced",
+    "workbench.tree.indent": 12,
+    "propTypes.tabWidth": 4,
+    "editor.formatOnSave": true,
+    "prettier.useTabs": false,
+    "editor.tabSize": 2
+}
