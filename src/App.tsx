@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 // import { Counter } from './features/counter/Counter'
 import './App.css'
+import Cleanup from './CleanUp'
 
 const App: React.FC = () => {
     const [ status, setState ] = useState<string | number>('テキスト')
     const [ input, setInput ] = useState('')
     const [ counter, setCounter ] = useState(0)
+    const [ display, setDisplay ] = useState(false)
 
     const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         setInput(e.target.value)
@@ -53,6 +55,12 @@ const App: React.FC = () => {
                  * onChangeHandler関数を通じてinputをBind
                  */}
 
+                {/* Clean Up */}
+                <h4>CleanUp</h4>
+                {display && <Cleanup />}
+                <button onClick={() => setDisplay(!display)}>
+                    Toggle Cleanup
+                </button>
                 {/* <Counter /> */}
             </header>
         </div>
